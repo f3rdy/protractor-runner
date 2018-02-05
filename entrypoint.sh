@@ -9,4 +9,4 @@ useradd -m -o -u $uid -g $gid protractor
 Xvfb :97 -ac &
 export DISPLAY=:97
 
-sudo -u protractor bash $@
+su - protractor -c 'bash $@'
