@@ -20,9 +20,9 @@ RUN apt-get -y update && apt-get -y install sudo && \
 RUN npm install -g protractor@5.1.1 protractor-console-plugin@0.1.1 protractor-jasmine2-html-reporter@0.0.7 protractor-jasmine2-screenshot-reporter@0.0.4 karma@1.3.0 jasmine@2.5.3 jasmine-core@2.8.0 jasmine-spec-reporter@4.2.1
 RUN webdriver-manager update
 
-WORKDIR /tests
-VOLUME ["/tests"]
+#WORKDIR /tests
+#VOLUME ["/tests"]
 
-COPY entrypoint.sh /
+#COPY entrypoint.sh /
 
-ENTRYPOINT ["/entrypoint.sh"]
+#ENTRYPOINT ["/entrypoint.sh"]
